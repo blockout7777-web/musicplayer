@@ -1,0 +1,17 @@
+# 음원은 저장소에 넣지 않는다.
+# 직접 만든 음원이라면 아래 줄을 지우고 커밋하면 된다.
+*.mp3
+*.m4a
+*.flac
+*.wav
+*.ogg
+*.aac
+
+# 배포 도구 부산물
+.wrangler/
+node_modules/
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
