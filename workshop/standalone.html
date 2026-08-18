@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<!-- 3D 메이커 체험 공방 · 단일 파일 버전 : 이미지까지 모두 이 파일 안에 들어 있습니다. -->
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#D4956A">
+
+<!-- ===== SEO ===== -->
+<title>3D 메이커 체험 공방 | 손으로 만드는 특별한 선물 · 대구 커플 원데이클래스</title>
+<meta name="description" content="대구 업사이클센터에 있는 3D 메이커 체험 공방. 3D펜과 3D프린터로 세상에 하나뿐인 커플 굿즈를 직접 만드는 90분 원데이클래스. 기념일·데이트 코스로 예약해 보세요.">
+<meta name="keywords" content="대구 원데이클래스, 커플 체험, 3D펜 공방, 3D프린팅 체험, 기념일 데이트, 대구 업사이클센터, 커플 굿즈 만들기">
+<meta name="author" content="3D 메이커 체험 공방">
+<meta name="robots" content="index, follow">
+<!-- TODO: 실제 도메인으로 교체하세요 -->
+<link rel="canonical" href="https://example.com/">
+
+<!-- ===== Open Graph ===== -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="3D 메이커 체험 공방">
+<meta property="og:title" content="3D 메이커 체험 공방 | 손으로 만드는 특별한 선물">
+<meta property="og:description" content="3D펜과 3D프린터로 둘만의 굿즈를 만드는 90분. 대구 업사이클센터에서 만나는 특별한 기념일 체험.">
+<meta property="og:url" content="https://example.com/">
+<meta property="og:image" content="https://example.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="따뜻한 조명 아래 놓인 하트와 링 모양의 수제 3D 굿즈">
+<meta property="og:locale" content="ko_KR">
+
+<!-- ===== Twitter ===== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="3D 메이커 체험 공방 | 손으로 만드는 특별한 선물">
+<meta name="twitter:description" content="3D펜과 3D프린터로 둘만의 굿즈를 만드는 90분. 대구 업사이클센터.">
+<meta name="twitter:image" content="https://example.com/assets/og-image.png">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23D4956A'/><path d='M16 25c-9-8-12-11-12-15a6 6 0 0 1 12-3 6 6 0 0 1 12 3c0 4-3 7-12 15z' fill='%23FFFAF5'/></svg>">
+
+<!-- ===== Fonts : Pretendard (+ Google Fonts 대체) ===== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+
+<!-- ===== 구조화 데이터 ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "3D 메이커 체험 공방",
+  "description": "3D펜과 3D프린터로 나만의 굿즈를 만드는 커플·기념일 원데이클래스 공방",
+  "image": "https://example.com/assets/og-image.png",
+  "url": "https://example.com/",
+  "telephone": "+82-53-000-0000",
+  "priceRange": "₩₩",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "KR",
+    "addressRegion": "대구광역시",
+    "streetAddress": "대구 업사이클센터"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "10:00",
+    "closes": "20:00"
+  }]
+}
+</script>
+
+<style>
+/* ============ 디자인 토큰 ============ */
+:root{
+  --terracotta:#D4956A;
+  --terracotta-dark:#B8764A;
+  --sub:#E8C4A0;
+  --ivory:#FFFAF5;
+  --cream:#FBF1E6;
+  --ink:#3B2A1E;
+  --ink-soft:#7A6355;
+  --line:rgba(212,149,106,.28);
+  --shadow:0 12px 32px rgba(122,79,45,.10);
+  --shadow-lg:0 20px 48px rgba(122,79,45,.16);
+  --radius:18px;
+  --nav-h:64px;
+  --font:"Pretendard Variable",Pretendard,"Noto Sans KR",-apple-system,BlinkMacSystemFont,system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:var(--nav-h);-webkit-text-size-adjust:100%;}
+body{
+  margin:0;background:var(--ivory);color:var(--ink);
+  font-family:var(--font);font-size:16px;line-height:1.8;font-weight:400;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;word-break:keep-all;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+h1,h2,h3,p{margin:0;}
+ul{margin:0;padding:0;list-style:none;}
+
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px;}
+.section{padding:72px 0;}
+.section--tint{background:var(--cream);}
+
+/* 섹션 헤더 : 소제목 14px 대문자 / 제목 28px Bold */
+.eyebrow{
+  font-size:14px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--terracotta);margin-bottom:12px;
+}
+.section-title{font-size:28px;font-weight:700;line-height:1.45;letter-spacing:-.02em;}
+.section-desc{margin-top:14px;color:var(--ink-soft);font-size:16px;line-height:1.8;}
+.section-head{max-width:620px;margin-bottom:40px;}
+.section-head--center{margin-left:auto;margin-right:auto;text-align:center;}
+
+/* ============ CTA 버튼 ============ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:16px 30px;border:0;border-radius:999px;
+  font-size:16px;font-weight:700;line-height:1;letter-spacing:-.01em;
+  transition:transform .25s ease,box-shadow .25s ease,background .25s ease;
+}
+.btn--primary{
+  background:linear-gradient(135deg,#E0A374,var(--terracotta) 55%,var(--terracotta-dark));
+  color:#fff;box-shadow:0 10px 26px rgba(212,149,106,.45);
+}
+.btn--primary:hover,.btn--primary:focus-visible{transform:translateY(-3px);box-shadow:0 16px 34px rgba(212,149,106,.55);}
+.btn--ghost{background:rgba(255,255,255,.14);color:#fff;border:1.5px solid rgba(255,255,255,.65);backdrop-filter:blur(6px);}
+.btn--ghost:hover{background:rgba(255,255,255,.26);}
+.btn--block{width:100%;}
+.btn--lg{padding:18px 36px;font-size:17px;}
+:focus-visible{outline:3px solid var(--terracotta);outline-offset:3px;border-radius:6px;}
+
+/* ============ 네비게이션 ============ */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);
+  display:flex;align-items:center;
+  transition:background .35s ease,box-shadow .35s ease,height .35s ease;
+}
+.nav__inner{width:100%;max-width:1120px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.nav__logo{display:flex;align-items:center;gap:9px;font-weight:700;font-size:17px;color:#fff;letter-spacing:-.02em;transition:color .35s ease;}
+.nav__logo-mark{
+  width:30px;height:30px;border-radius:9px;flex:0 0 auto;
+  background:linear-gradient(135deg,var(--sub),var(--terracotta));
+  display:grid;place-items:center;color:#fff;font-size:13px;font-weight:700;
+}
+.nav__menu{display:none;}
+.nav__cta{display:none;}
+.nav__toggle{
+  width:42px;height:42px;border:0;background:transparent;padding:0;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+}
+.nav__toggle span{display:block;width:22px;height:2px;border-radius:2px;background:#fff;transition:transform .3s ease,opacity .25s ease,background .35s ease;}
+.nav--solid{background:rgba(255,255,255,.96);box-shadow:0 2px 20px rgba(122,79,45,.10);backdrop-filter:blur(10px);}
+.nav--solid .nav__logo{color:var(--ink);}
+.nav--solid .nav__toggle span{background:var(--ink);}
+.nav--solid .nav__link{color:var(--ink);}
+.nav.is-open{background:rgba(255,255,255,.98);}
+.nav.is-open .nav__logo{color:var(--ink);}
+.nav.is-open .nav__toggle span{background:var(--ink);}
+.nav.is-open .nav__toggle span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.nav.is-open .nav__toggle span:nth-child(2){opacity:0;}
+.nav.is-open .nav__toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+/* 모바일 드로어 */
+.drawer{
+  position:fixed;top:var(--nav-h);left:0;right:0;z-index:99;
+  background:#fff;border-top:1px solid var(--line);
+  box-shadow:0 18px 36px rgba(122,79,45,.14);
+  transform:translateY(-120%);opacity:0;visibility:hidden;
+  transition:transform .38s cubic-bezier(.22,1,.36,1),opacity .3s ease,visibility .3s;
+}
+.drawer.is-open{transform:translateY(0);opacity:1;visibility:visible;}
+.drawer ul{padding:10px 20px 22px;}
+.drawer a{display:block;padding:14px 4px;font-size:16px;font-weight:500;border-bottom:1px solid rgba(212,149,106,.16);}
+.drawer .btn{display:flex;margin-top:18px;padding:16px 30px;border-bottom:0;color:#fff;}
+
+/* ============ 히어로 ============ */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden;}
+.hero__bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
+.hero__overlay{
+  position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(35,20,12,.72) 0%,rgba(45,26,16,.56) 45%,rgba(30,17,10,.82) 100%);
+}
+.hero__inner{position:relative;z-index:2;width:100%;max-width:1120px;margin:0 auto;padding:96px 20px 110px;color:#fff;text-align:center;}
+.hero__tag{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 18px;border-radius:999px;margin-bottom:22px;
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.32);
+  font-size:13px;font-weight:600;letter-spacing:.06em;
+}
+.hero__title{font-size:34px;font-weight:700;line-height:1.35;letter-spacing:-.03em;text-shadow:0 4px 24px rgba(0,0,0,.35);}
+.hero__sub{margin-top:18px;font-size:17px;font-weight:500;color:rgba(255,255,255,.9);letter-spacing:.04em;}
+.hero__desc{margin:16px auto 0;max-width:520px;font-size:16px;line-height:1.8;color:rgba(255,255,255,.78);}
+.hero__actions{margin-top:34px;display:flex;flex-direction:column;gap:12px;align-items:center;}
+.hero__actions .btn{width:100%;max-width:300px;}
+.hero__meta{margin-top:30px;display:flex;justify-content:center;flex-wrap:wrap;gap:10px 22px;font-size:14px;color:rgba(255,255,255,.72);}
+.hero__meta span{display:inline-flex;align-items:center;gap:6px;}
+.hero__meta span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--sub);}
+
+.scroll-cue{
+  position:absolute;left:50%;bottom:24px;transform:translateX(-50%);z-index:3;
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+  color:rgba(255,255,255,.8);font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+}
+.scroll-cue__arrow{width:22px;height:22px;animation:bounce 1.9s infinite;}
+@keyframes bounce{0%,100%{transform:translateY(0);opacity:.65;}50%{transform:translateY(9px);opacity:1;}}
+
+/* ============ 서비스 카드 ============ */
+.cards{display:grid;gap:22px;}
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow);transition:transform .3s ease,box-shadow .3s ease;display:flex;flex-direction:column;
+}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);}
+.card__img{width:100%;aspect-ratio:3/2;object-fit:cover;background:var(--cream);}
+.card__body{padding:24px 22px 26px;flex:1;display:flex;flex-direction:column;}
+.card__label{font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--terracotta);}
+.card__title{margin-top:10px;font-size:20px;font-weight:700;letter-spacing:-.02em;}
+.card__text{margin-top:10px;color:var(--ink-soft);font-size:16px;line-height:1.8;}
+.card__tags{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px;}
+.tag{padding:6px 13px;border-radius:999px;background:rgba(232,196,160,.32);color:#8A5A34;font-size:13px;font-weight:600;}
+
+/* ============ 강점 · 숫자 ============ */
+.stats{display:grid;gap:16px;}
+.stat{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:28px 22px;text-align:center;box-shadow:var(--shadow);
+}
+.stat__num{
+  font-size:40px;font-weight:700;line-height:1.1;letter-spacing:-.03em;
+  background:linear-gradient(135deg,var(--terracotta),var(--terracotta-dark));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.stat__label{margin-top:10px;font-size:16px;font-weight:700;}
+.stat__desc{margin-top:6px;font-size:14px;color:var(--ink-soft);line-height:1.7;}
+.points{margin-top:38px;display:grid;gap:14px;}
+.point{display:flex;gap:14px;padding:20px;background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:14px;}
+.point__no{
+  flex:0 0 auto;width:34px;height:34px;border-radius:50%;
+  background:var(--terracotta);color:#fff;display:grid;place-items:center;font-size:14px;font-weight:700;
+}
+.point__title{font-size:17px;font-weight:700;}
+.point__text{margin-top:4px;font-size:15px;color:var(--ink-soft);line-height:1.75;}
+
+/* ============ 후기 캐러셀 ============ */
+.carousel{position:relative;}
+.carousel__viewport{overflow:hidden;border-radius:var(--radius);}
+.carousel__track{display:flex;transition:transform .55s cubic-bezier(.22,1,.36,1);}
+.slide{flex:0 0 100%;padding:8px;}
+.review{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:30px 24px;box-shadow:var(--shadow);height:100%;
+}
+.review__stars{color:var(--terracotta);font-size:16px;letter-spacing:3px;}
+.review__quote{margin-top:14px;font-size:16px;line-height:1.85;color:var(--ink);}
+.review__who{margin-top:20px;display:flex;align-items:center;gap:12px;}
+.review__avatar{
+  width:42px;height:42px;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--sub),var(--terracotta));color:#fff;font-weight:700;font-size:15px;
+}
+.review__name{font-size:15px;font-weight:700;}
+.review__tagline{font-size:13px;color:var(--ink-soft);}
+.carousel__controls{margin-top:22px;display:flex;align-items:center;justify-content:center;gap:16px;}
+.carousel__btn{
+  width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#fff;
+  display:grid;place-items:center;color:var(--terracotta);box-shadow:var(--shadow);
+  transition:background .25s ease,color .25s ease,transform .2s ease;
+}
+.carousel__btn:hover{background:var(--terracotta);color:#fff;transform:scale(1.06);}
+.carousel__dots{display:flex;gap:8px;}
+.dot{width:9px;height:9px;padding:0;border:0;border-radius:999px;background:var(--sub);transition:width .3s ease,background .3s ease;}
+.dot.is-active{width:26px;background:var(--terracotta);}
+
+/* ============ 오시는 길 ============ */
+.location{display:grid;gap:26px;}
+.map-card{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#fff;}
+.map-card img{width:100%;aspect-ratio:3/2;object-fit:cover;}
+.map-card__foot{padding:16px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}
+.map-card__foot span{font-size:14px;color:var(--ink-soft);}
+.map-card__foot a{font-size:14px;font-weight:700;color:var(--terracotta);}
+.info-list{display:grid;gap:2px;}
+.info{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line);}
+.info:last-child{border-bottom:0;}
+.info__icon{
+  flex:0 0 auto;width:38px;height:38px;border-radius:12px;background:rgba(232,196,160,.35);
+  display:grid;place-items:center;color:var(--terracotta-dark);
+}
+.info__label{font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--terracotta);}
+.info__value{margin-top:2px;font-size:16px;line-height:1.7;}
+.info__note{font-size:14px;color:var(--ink-soft);}
+
+/* ============ 문의 폼 ============ */
+.form-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:28px 22px;box-shadow:var(--shadow-lg);
+}
+.field{margin-bottom:18px;}
+.field label{display:block;font-size:14px;font-weight:700;margin-bottom:8px;}
+.field .req{color:var(--terracotta);margin-left:3px;}
+.field input,.field select,.field textarea{
+  width:100%;padding:14px 16px;font-family:inherit;font-size:16px;line-height:1.6;color:var(--ink);
+  background:var(--ivory);border:1.5px solid var(--line);border-radius:12px;transition:border-color .2s ease,box-shadow .2s ease;
+}
+.field textarea{min-height:130px;resize:vertical;}
+.field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D4956A' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:20px;padding-right:44px;}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--terracotta);box-shadow:0 0 0 4px rgba(212,149,106,.16);}
+.field .error{display:none;margin-top:6px;font-size:13px;color:#C0392B;}
+.field.is-invalid input,.field.is-invalid select,.field.is-invalid textarea{border-color:#C0392B;}
+.field.is-invalid .error{display:block;}
+.form-agree{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--ink-soft);line-height:1.7;margin-bottom:22px;}
+.form-agree input{width:18px;height:18px;flex:0 0 auto;margin-top:5px;accent-color:var(--terracotta);}
+.form-note{margin-top:14px;font-size:13px;color:var(--ink-soft);text-align:center;line-height:1.7;}
+.form-success{
+  display:none;margin-top:18px;padding:18px;border-radius:14px;
+  background:rgba(232,196,160,.3);border:1px solid var(--line);font-size:15px;line-height:1.75;
+}
+.form-success.is-shown{display:block;}
+
+.quick{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.quick a{
+  display:flex;flex-direction:column;align-items:center;gap:8px;padding:18px 8px;
+  background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  font-size:14px;font-weight:700;transition:transform .25s ease,box-shadow .25s ease;
+}
+.quick a:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);}
+.quick i{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:rgba(232,196,160,.35);color:var(--terracotta-dark);}
+
+/* ============ 푸터 ============ */
+.footer{background:#3B2A1E;color:rgba(255,255,255,.72);padding:48px 0 36px;font-size:14px;line-height:1.85;}
+.footer__top{display:grid;gap:26px;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.14);}
+.footer__brand{display:flex;align-items:center;gap:9px;color:#fff;font-size:17px;font-weight:700;}
+.footer__tagline{margin-top:10px;color:rgba(255,255,255,.62);}
+.footer__sns{display:flex;gap:10px;margin-top:16px;}
+.footer__sns a{
+  width:40px;height:40px;border-radius:50%;display:grid;place-items:center;
+  background:rgba(255,255,255,.1);color:#fff;transition:background .25s ease,transform .25s ease;
+}
+.footer__sns a:hover{background:var(--terracotta);transform:translateY(-3px);}
+.footer h3{font-size:14px;font-weight:700;color:#fff;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;}
+.footer__biz p{margin:0;color:rgba(255,255,255,.6);font-size:13px;}
+.footer__bottom{padding-top:22px;display:flex;flex-direction:column;gap:8px;font-size:13px;color:rgba(255,255,255,.5);}
+.footer__bottom a{text-decoration:underline;text-underline-offset:3px;}
+
+/* ============ 스크롤 페이드인 ============ */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.22,1,.36,1);}
+.reveal.is-visible{opacity:1;transform:none;}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  .reveal{opacity:1;transform:none;transition:none;}
+  .scroll-cue__arrow{animation:none;}
+  .carousel__track{transition:none;}
+}
+
+/* ============ 반응형 (모바일 우선) ============ */
+@media (min-width:600px){
+  .hero__title{font-size:44px;}
+  .hero__actions{flex-direction:row;justify-content:center;}
+  .hero__actions .btn{width:auto;}
+  .cards{grid-template-columns:repeat(2,1fr);}
+  .stats{grid-template-columns:repeat(2,1fr);}
+  .form-card{padding:34px 30px;}
+  .footer__top{grid-template-columns:1.4fr 1fr;}
+}
+@media (min-width:900px){
+  :root{--nav-h:76px;}
+  .section{padding:104px 0;}
+  .hero__title{font-size:56px;}
+  .hero__sub{font-size:19px;}
+  .nav__toggle{display:none;}
+  .nav__menu{display:flex;align-items:center;gap:30px;}
+  .nav__link{position:relative;font-size:15px;font-weight:500;color:rgba(255,255,255,.92);transition:color .3s ease;}
+  .nav__link::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:2px;background:var(--terracotta);transition:right .3s ease;}
+  .nav__link:hover::after,.nav__link.is-active::after{right:0;}
+  .nav__link.is-active{color:var(--terracotta);}
+  .nav__cta{display:inline-flex;padding:12px 22px;font-size:15px;}
+  .cards{grid-template-columns:repeat(4,1fr);gap:24px;}
+  .stats{grid-template-columns:repeat(4,1fr);gap:20px;}
+  .points{grid-template-columns:repeat(3,1fr);}
+  .location{grid-template-columns:1.15fr .85fr;align-items:start;gap:44px;}
+  .slide{flex-basis:50%;}
+  .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:start;}
+  .footer__top{grid-template-columns:1.6fr 1fr 1.2fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= 네비게이션 ================= -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="#home" aria-label="3D 메이커 체험 공방 홈으로">
+      <span class="nav__logo-mark" aria-hidden="true">3D</span>
+      <span>3D 메이커 체험 공방</span>
+    </a>
+
+    <nav class="nav__menu" aria-label="주요 메뉴">
+      <a class="nav__link" href="#services">체험 소개</a>
+      <a class="nav__link" href="#strengths">우리만의 강점</a>
+      <a class="nav__link" href="#reviews">고객 후기</a>
+      <a class="nav__link" href="#location">오시는 길</a>
+      <a class="nav__link" href="#contact">문의하기</a>
+    </nav>
+
+    <a class="btn btn--primary nav__cta" href="#contact">클래스 예약하기</a>
+
+    <button class="nav__toggle" id="navToggle" type="button"
+            aria-label="메뉴 열기" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <ul>
+    <li><a href="#services">체험 소개</a></li>
+    <li><a href="#strengths">우리만의 강점</a></li>
+    <li><a href="#reviews">고객 후기</a></li>
+    <li><a href="#location">오시는 길</a></li>
+    <li><a href="#contact">문의하기</a></li>
+    <li><a class="btn btn--primary btn--block" href="#contact">클래스 예약하기</a></li>
+  </ul>
+</div>
+
+<main>
+<!-- ================= 1. 히어로 ================= -->
+<section class="hero" id="home">
+  <img class="hero__bg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNjAwIDkwMCIgd2lkdGg9IjE2MDAiIGhlaWdodD0iOTAwIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IuqzteuwqeyXkOyEnCDsu6TtlIzsnbQgM0Qg7ZSE66aw7YSw66GcIOq1v+ymiOulvCDrp4zrk5zripQg66qo7Iq1Ij4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ic2t5IiB4MT0iMCIgeTE9IjAiIHgyPSIwLjMiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjM2QyNDE4Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMC41NSIgc3RvcC1jb2xvcj0iIzZiM2YyYSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyYTE4MTAiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3ciIGN4PSIwLjcyIiBjeT0iMC4yNCIgcj0iMC41NSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0Y0Qzk4RSIgc3RvcC1vcGFjaXR5PSIwLjg1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMC40NSIgc3RvcC1jb2xvcj0iI0Q0OTU2QSIgc3RvcC1vcGFjaXR5PSIwLjM1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0Q0OTU2QSIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJsYW1wIiBjeD0iMC41IiBjeT0iMC41IiByPSIwLjUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGRkUzQjgiIHN0b3Atb3BhY2l0eT0iMC45NSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGRkQ3OUUiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0idGFibGV0b3AiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjQTk3MTRCIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzZFNDQyOSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0icHJpbnRnbG93IiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0ZGRTBBRSIgc3RvcC1vcGFjaXR5PSIwLjkiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRThDNEEwIiBzdG9wLW9wYWNpdHk9IjAuMTUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZmxvb3IiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMzMyMDBmIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzFjMTAwOCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CgogIDxyZWN0IHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0idXJsKCNza3kpIi8+CiAgPHJlY3Qgd2lkdGg9IjE2MDAiIGhlaWdodD0iOTAwIiBmaWxsPSJ1cmwoI2dsb3cpIi8+CgogIDwhLS0g7LC966y4IC0tPgogIDxnIG9wYWNpdHk9IjAuNSI+CiAgICA8cmVjdCB4PSIxMDEwIiB5PSI5MCIgd2lkdGg9IjQyMCIgaGVpZ2h0PSIzMzAiIHJ4PSIxNCIgZmlsbD0iI0ZGRDhBNiIgb3BhY2l0eT0iMC4yOCIvPgogICAgPHJlY3QgeD0iMTAxMCIgeT0iOTAiIHdpZHRoPSI0MjAiIGhlaWdodD0iMzMwIiByeD0iMTQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0YyQzg5MiIgc3Ryb2tlLW9wYWNpdHk9IjAuNSIgc3Ryb2tlLXdpZHRoPSI2Ii8+CiAgICA8bGluZSB4MT0iMTIyMCIgeTE9IjkwIiB4Mj0iMTIyMCIgeTI9IjQyMCIgc3Ryb2tlPSIjRjJDODkyIiBzdHJva2Utb3BhY2l0eT0iMC40NSIgc3Ryb2tlLXdpZHRoPSI2Ii8+CiAgICA8bGluZSB4MT0iMTAxMCIgeTE9IjI1NSIgeDI9IjE0MzAiIHkyPSIyNTUiIHN0cm9rZT0iI0YyQzg5MiIgc3Ryb2tlLW9wYWNpdHk9IjAuNDUiIHN0cm9rZS13aWR0aD0iNiIvPgogIDwvZz4KCiAgPCEtLSDshKDrsJjqs7wg6rW/7KaIIC0tPgogIDxnIG9wYWNpdHk9IjAuNTUiPgogICAgPHJlY3QgeD0iMTIwIiB5PSIyNDAiIHdpZHRoPSI1MjAiIGhlaWdodD0iMTIiIHJ4PSI2IiBmaWxsPSIjQzA4QTVGIi8+CiAgICA8cmVjdCB4PSIxMjAiIHk9IjQzMCIgd2lkdGg9IjUyMCIgaGVpZ2h0PSIxMiIgcng9IjYiIGZpbGw9IiNDMDhBNUYiLz4KICAgIDxjaXJjbGUgY3g9IjE5MCIgY3k9IjIwNSIgcj0iMzAiIGZpbGw9IiNFOEM0QTAiIG9wYWNpdHk9IjAuNzUiLz4KICAgIDxyZWN0IHg9IjI1NSIgeT0iMTgwIiB3aWR0aD0iNTIiIGhlaWdodD0iNjAiIHJ4PSIxMCIgZmlsbD0iI0Q0OTU2QSIgb3BhY2l0eT0iMC44Ii8+CiAgICA8cGF0aCBkPSJNMzYwIDI0MCBsMzQgLTYyIDM0IDYyIHoiIGZpbGw9IiNFOEM0QTAiIG9wYWNpdHk9IjAuNyIvPgogICAgPHJlY3QgeD0iNDcwIiB5PSIxODYiIHdpZHRoPSI3MCIgaGVpZ2h0PSI1NCIgcng9IjgiIGZpbGw9IiNDOTgzNTYiIG9wYWNpdHk9IjAuNzUiLz4KICAgIDxjaXJjbGUgY3g9IjU4MCIgY3k9IjIxMiIgcj0iMjgiIGZpbGw9IiNFOEM0QTAiIG9wYWNpdHk9IjAuNiIvPgogICAgPHJlY3QgeD0iMTUwIiB5PSIzODAiIHdpZHRoPSI2MCIgaGVpZ2h0PSI1MCIgcng9IjEwIiBmaWxsPSIjRDQ5NTZBIiBvcGFjaXR5PSIwLjc1Ii8+CiAgICA8Y2lyY2xlIGN4PSIyOTAiIGN5PSI0MDAiIHI9IjMwIiBmaWxsPSIjRThDNEEwIiBvcGFjaXR5PSIwLjY1Ii8+CiAgICA8cGF0aCBkPSJNNDAwIDQzMCBjLTI2IC0yNiAtNDYgLTQ0IC00NiAtNjYgYTI2IDI2IDAgMCAxIDQ2IC0xNiBhMjYgMjYgMCAwIDEgNDYgMTYgYzAgMjIgLTIwIDQwIC00NiA2NiB6IiBmaWxsPSIjRTlBODdDIiBvcGFjaXR5PSIwLjg1Ii8+CiAgICA8cmVjdCB4PSI0OTAiIHk9IjM3OCIgd2lkdGg9IjkwIiBoZWlnaHQ9IjUyIiByeD0iMTAiIGZpbGw9IiNDOTgzNTYiIG9wYWNpdHk9IjAuNyIvPgogIDwvZz4KCiAgPCEtLSDsoITqtawg7KGw66qFIC0tPgogIDxnPgogICAgPHBhdGggZD0iTTYwIDYwIEMgNDIwIDE3MCwgOTAwIDQwLCAxNTYwIDEzMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRThDNEEwIiBzdHJva2Utb3BhY2l0eT0iMC4zNSIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgICA8ZyBmaWxsPSIjRkZENzlFIj4KICAgICAgPGNpcmNsZSBjeD0iMjYwIiBjeT0iMTEyIiByPSI5Ii8+PGNpcmNsZSBjeD0iNTIwIiBjeT0iMTI2IiByPSI5Ii8+PGNpcmNsZSBjeD0iNzgwIiBjeT0iOTYiIHI9IjkiLz48Y2lyY2xlIGN4PSIxMDQwIiBjeT0iODIiIHI9IjkiLz48Y2lyY2xlIGN4PSIxMzAwIiBjeT0iMTAyIiByPSI5Ii8+CiAgICA8L2c+CiAgICA8ZyBmaWxsPSJ1cmwoI2xhbXApIiBvcGFjaXR5PSIwLjY1Ij4KICAgICAgPGNpcmNsZSBjeD0iMjYwIiBjeT0iMTEyIiByPSI2MCIvPjxjaXJjbGUgY3g9IjUyMCIgY3k9IjEyNiIgcj0iNjAiLz48Y2lyY2xlIGN4PSI3ODAiIGN5PSI5NiIgcj0iNjAiLz48Y2lyY2xlIGN4PSIxMDQwIiBjeT0iODIiIHI9IjYwIi8+PGNpcmNsZSBjeD0iMTMwMCIgY3k9IjEwMiIgcj0iNjAiLz4KICAgIDwvZz4KICA8L2c+CgogIDwhLS0g7J6R7JeF64yAIC0tPgogIDxyZWN0IHg9IjAiIHk9IjcwMCIgd2lkdGg9IjE2MDAiIGhlaWdodD0iNDQiIGZpbGw9InVybCgjdGFibGV0b3ApIi8+CiAgPHJlY3QgeD0iMCIgeT0iNzQ0IiB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIxNTYiIGZpbGw9InVybCgjZmxvb3IpIi8+CiAgPGVsbGlwc2UgY3g9IjEwOTAiIGN5PSI3NjAiIHJ4PSIzNjAiIHJ5PSI0NiIgZmlsbD0iI0ZGRDc5RSIgb3BhY2l0eT0iMC4xMCIvPgogIDxlbGxpcHNlIGN4PSI1NjAiIGN5PSI3NjYiIHJ4PSIzMDAiIHJ5PSIzOCIgZmlsbD0iI0ZGRDc5RSIgb3BhY2l0eT0iMC4wNiIvPgoKICA8IS0tIDNEIO2UhOumsO2EsCAtLT4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NDAgNDkwKSI+CiAgICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIxMCIgcng9IjE2IiBmaWxsPSIjM0EyMzE3IiBzdHJva2U9IiNDMDhBNUYiIHN0cm9rZS13aWR0aD0iNSIvPgogICAgPHJlY3QgeD0iMjYiIHk9IjI2IiB3aWR0aD0iMjQ4IiBoZWlnaHQ9IjE1OCIgcng9IjgiIGZpbGw9IiMxRTExMDkiLz4KICAgIDxyZWN0IHg9IjI2IiB5PSIyNiIgd2lkdGg9IjI0OCIgaGVpZ2h0PSIxNTgiIHJ4PSI4IiBmaWxsPSJ1cmwoI3ByaW50Z2xvdykiLz4KICAgIDxyZWN0IHg9IjYwIiB5PSIxNTAiIHdpZHRoPSIxODAiIGhlaWdodD0iMTIiIHJ4PSI2IiBmaWxsPSIjQzA4QTVGIi8+CiAgICA8cmVjdCB4PSIxNDAiIHk9IjQ0IiB3aWR0aD0iMjIiIGhlaWdodD0iNzAiIHJ4PSI2IiBmaWxsPSIjRThDNEEwIi8+CiAgICA8cGF0aCBkPSJNMTIwIDE1MCBoNjAgbC0xMCAtNDYgaC00MCB6IiBmaWxsPSIjRkZENzlFIiBvcGFjaXR5PSIwLjk1Ii8+CiAgICA8Y2lyY2xlIGN4PSIxNTAiIGN5PSIxMjAiIHI9IjU0IiBmaWxsPSJ1cmwoI2xhbXApIiBvcGFjaXR5PSIwLjciLz4KICA8L2c+CgogIDwhLS0g7IKs656MIOyLpOujqOyXoyAy7J24IC0tPgogIDxnIGZpbGw9IiMxQjBGMDciIG9wYWNpdHk9IjAuOTIiPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDIwIDMzMCkiPgogICAgICA8Y2lyY2xlIGN4PSI5MCIgY3k9IjcwIiByPSI1NiIvPgogICAgICA8cGF0aCBkPSJNMTAgMzgwIEMgNCAyMTAsIDQwIDEzOCwgOTAgMTM4IEMgMTQwIDEzOCwgMTc2IDIxMCwgMTcwIDM4MCBaIi8+CiAgICAgIDxwYXRoIGQ9Ik0xNTAgMjAwIEMgMjEwIDIxNCwgMjUwIDI1NCwgMjY4IDMwMCBMIDIzNiAzMTYgQyAyMTYgMjc4LCAxODYgMjUwLCAxNDIgMjQwIFoiLz4KICAgIDwvZz4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY0MCAzMDApIj4KICAgICAgPGNpcmNsZSBjeD0iOTYiIGN5PSI3NiIgcj0iNjAiLz4KICAgICAgPHBhdGggZD0iTTEyIDQxMCBDIDYgMjMyLCA0NCAxNTIsIDk2IDE1MiBDIDE0OCAxNTIsIDE4NiAyMzIsIDE4MCA0MTAgWiIvPgogICAgICA8cGF0aCBkPSJNNDAgMjE2IEMgLTE4IDIzNiwgLTUwIDI4MiwgLTYwIDMzMCBMIC0yNiAzNDQgQyAtMTIgMzA0LCAxMiAyNzYsIDUwIDI1OCBaIi8+CiAgICA8L2c+CiAgPC9nPgoKICA8IS0tIO2FjOydtOu4lCDsnIQg7J6R7J2AIOyGjO2SiCAtLT4KICA8ZyBvcGFjaXR5PSIwLjg1Ij4KICAgIDxwYXRoIGQ9Ik0zMDAgNzAwIGMtMjIgLTIyIC00MCAtMzggLTQwIC01NyBhMjIgMjIgMCAwIDEgNDAgLTE0IGEyMiAyMiAwIDAgMSA0MCAxNCBjMCAxOSAtMTggMzUgLTQwIDU3IHoiIGZpbGw9IiNFOUE4N0MiLz4KICAgIDxyZWN0IHg9Ijc3MCIgeT0iNjUyIiB3aWR0aD0iNzIiIGhlaWdodD0iNDgiIHJ4PSIxMCIgZmlsbD0iI0Q0OTU2QSIvPgogICAgPGNpcmNsZSBjeD0iMTM0MCIgY3k9IjY3NCIgcj0iMjYiIGZpbGw9IiNFOEM0QTAiLz4KICA8L2c+CgogIDwhLS0g66i87KeAL+uztOy8gCAtLT4KICA8ZyBmaWxsPSIjRkZFM0I4IiBvcGFjaXR5PSIwLjI1Ij4KICAgIDxjaXJjbGUgY3g9IjE4MCIgY3k9IjUyMCIgcj0iNiIvPjxjaXJjbGUgY3g9IjcwMCIgY3k9IjE4MCIgcj0iOCIvPjxjaXJjbGUgY3g9IjExODAiIGN5PSIzMzAiIHI9IjUiLz4KICAgIDxjaXJjbGUgY3g9Ijg4MCIgY3k9IjQ3MCIgcj0iNyIvPjxjaXJjbGUgY3g9IjE0ODAiIGN5PSI1MjAiIHI9IjYiLz48Y2lyY2xlIGN4PSIzNjAiIGN5PSIxMjAiIHI9IjUiLz4KICA8L2c+Cjwvc3ZnPgo="
+       alt="따뜻한 조명이 켜진 공방에서 커플이 작업대에 앉아 3D 프린터로 굿즈를 만드는 모습" fetchpriority="high">
+  <div class="hero__overlay" aria-hidden="true"></div>
+
+  <div class="hero__inner">
+    <span class="hero__tag">대구 업사이클센터 · 커플 원데이클래스</span>
+    <h1 class="hero__title">손으로 만드는<br>특별한 선물</h1>
+    <p class="hero__sub">3D 메이커 체험 공방</p>
+    <p class="hero__desc">사서 주는 선물 말고, 함께 만든 선물. 3D펜과 3D프린터로 세상에 하나뿐인 우리 굿즈를 90분 만에 완성합니다.</p>
+
+    <div class="hero__actions">
+      <a class="btn btn--primary btn--lg" href="#contact">클래스 예약하기</a>
+      <a class="btn btn--ghost btn--lg" href="#services">체험 둘러보기</a>
+    </div>
+
+    <div class="hero__meta">
+      <span>초보자 100% 가능</span>
+      <span>2인 커플 클래스</span>
+      <span>당일 완성 · 포장 제공</span>
+    </div>
+  </div>
+
+  <a class="scroll-cue" href="#services" aria-label="아래 내용으로 스크롤">
+    <span>Scroll</span>
+    <svg class="scroll-cue__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 5v14M19 12l-7 7-7-7"/>
+    </svg>
+  </a>
+</section>
+
+<!-- ================= 2. 서비스 소개 ================= -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head section-head--center reveal">
+      <p class="eyebrow">Our Class</p>
+      <h2 class="section-title">재미있게, 그리고 특별하게<br>만드는 네 가지 방법</h2>
+      <p class="section-desc">한 번도 안 해봐도 괜찮아요. 도안 고르기부터 마감까지 선생님이 옆에서 함께합니다. 오늘 만든 건 오늘 가져가세요.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card reveal">
+        <img class="card__img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSIzRCDtjpzsnLzroZwg7ZWY7Yq4IOuqqOyWkeydhCDqt7jrpqzripQg7IaQIOydvOufrOyKpO2KuCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnMSIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGREYxRTQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGM0RDQzQiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJ1cmwoI2JnMSkiLz4KICA8Y2lyY2xlIGN4PSI0NzAiIGN5PSI5MCIgcj0iMTIwIiBmaWxsPSIjRThDNEEwIiBvcGFjaXR5PSIwLjQ1Ii8+CiAgPGNpcmNsZSBjeD0iMTEwIiBjeT0iMzMwIiByPSI5MCIgZmlsbD0iI0Q0OTU2QSIgb3BhY2l0eT0iMC4yMiIvPgogIDwhLS0g7ZWY7Yq4IC0tPgogIDxwYXRoIGQ9Ik0zMDAgMzAwIGMtNzIgLTY4IC0xMjIgLTEwNCAtMTIyIC0xNTYgYTYyIDYyIDAgMCAxIDEyMiAtMzggYTYyIDYyIDAgMCAxIDEyMiAzOCBjMCA1MiAtNTAgODggLTEyMiAxNTYgeiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRDQ5NTZBIiBzdHJva2Utd2lkdGg9IjE2IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNMzAwIDMwMCBjLTcyIC02OCAtMTIyIC0xMDQgLTEyMiAtMTU2IGE2MiA2MiAwIDAgMSAxMjIgLTM4IiBmaWxsPSJub25lIiBzdHJva2U9IiNCODZGNDIiIHN0cm9rZS13aWR0aD0iMTYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwhLS0gM0Qg7Y6cIC0tPgogIDxnIHRyYW5zZm9ybT0icm90YXRlKDI4IDQyMCAxMzApIj4KICAgIDxyZWN0IHg9IjM4MCIgeT0iNjAiIHdpZHRoPSIzNCIgaGVpZ2h0PSIxNTAiIHJ4PSIxNCIgZmlsbD0iIzZFNDQyOSIvPgogICAgPHJlY3QgeD0iMzgwIiB5PSI5NiIgd2lkdGg9IjM0IiBoZWlnaHQ9IjQ2IiByeD0iOCIgZmlsbD0iI0U4QzRBMCIvPgogICAgPHBhdGggZD0iTTM4MCAyMTAgaDM0IGwtMTcgMzQgeiIgZmlsbD0iI0MwOEE1RiIvPgogIDwvZz4KICA8Y2lyY2xlIGN4PSI0MjIiIGN5PSIyNTIiIHI9IjkiIGZpbGw9IiNENDk1NkEiLz4KICA8Y2lyY2xlIGN4PSI0NTIiIGN5PSIyODYiIHI9IjYiIGZpbGw9IiNFOEM0QTAiLz4KPC9zdmc+Cg==" alt="3D펜으로 하트 모양 장식을 그리고 있는 손 일러스트">
+        <div class="card__body">
+          <p class="card__label">3D Pen</p>
+          <h3 class="card__title">3D펜 드로잉 클래스</h3>
+          <p class="card__text">공중에 그림을 그리듯 입체 작품을 만듭니다. 이름 키링, 커플 이니셜 오브제까지 가장 인기 있는 입문 코스예요.</p>
+          <div class="card__tags"><span class="tag">60분</span><span class="tag">초보 추천</span></div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <img class="card__img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSIzRCDtlITrprDthLDroZwg7Luk7ZSMIO2CpOungeqzvCDqtb/spojrpbwg7Lac66Cl7ZWY64qUIOydvOufrOyKpO2KuCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnMiIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGREYxRTQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGMURBQzYiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJ1cmwoI2JnMikiLz4KICA8Y2lyY2xlIGN4PSIxMjAiIGN5PSI4MCIgcj0iMTAwIiBmaWxsPSIjRThDNEEwIiBvcGFjaXR5PSIwLjUiLz4KICA8Y2lyY2xlIGN4PSI1MTAiIGN5PSIzMzAiIHI9IjgwIiBmaWxsPSIjRDQ5NTZBIiBvcGFjaXR5PSIwLjIiLz4KICA8IS0tIO2UhOumsO2EsCAtLT4KICA8cmVjdCB4PSIxNTAiIHk9IjgwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIzMCIgcng9IjIwIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiNENDk1NkEiIHN0cm9rZS13aWR0aD0iMTAiLz4KICA8cmVjdCB4PSIxODUiIHk9IjExNSIgd2lkdGg9IjIzMCIgaGVpZ2h0PSIxNDAiIHJ4PSIxMCIgZmlsbD0iI0ZCRUFEQSIvPgogIDxyZWN0IHg9IjIxNSIgeT0iMjMwIiB3aWR0aD0iMTcwIiBoZWlnaHQ9IjE0IiByeD0iNyIgZmlsbD0iI0MwOEE1RiIvPgogIDxyZWN0IHg9IjI4OCIgeT0iMTI4IiB3aWR0aD0iMjQiIGhlaWdodD0iNjAiIHJ4PSI4IiBmaWxsPSIjRDQ5NTZBIi8+CiAgPCEtLSDstpzroKXrrLw6IO2CpOungSDrkZAg6rCcIC0tPgogIDxwYXRoIGQ9Ik0yNzAgMjMwIGMtMjQgLTIyIC00MCAtMzYgLTQwIC01NCBhMjAgMjAgMCAwIDEgNDAgLTEzIGEyMCAyMCAwIDAgMSA0MCAxMyBjMCAxOCAtMTYgMzIgLTQwIDU0IHoiIGZpbGw9IiNENDk1NkEiLz4KICA8Y2lyY2xlIGN4PSIzNTIiIGN5PSIyMDYiIHI9IjI2IiBmaWxsPSJub25lIiBzdHJva2U9IiNCODZGNDIiIHN0cm9rZS13aWR0aD0iMTAiLz4KICA8cmVjdCB4PSIxNTAiIHk9IjMxMCIgd2lkdGg9IjMwMCIgaGVpZ2h0PSIxOCIgcng9IjkiIGZpbGw9IiNFOEM0QTAiLz4KICA8Y2lyY2xlIGN4PSI0NzAiIGN5PSIxNTAiIHI9IjE0IiBmaWxsPSIjRThDNEEwIi8+CiAgPGNpcmNsZSBjeD0iMTIwIiBjeT0iMjcwIiByPSIxMCIgZmlsbD0iI0Q0OTU2QSIgb3BhY2l0eT0iMC42Ii8+Cjwvc3ZnPgo=" alt="3D 프린터가 하트와 링 모양 키링을 출력하고 있는 일러스트">
+        <div class="card__body">
+          <p class="card__label">3D Printing</p>
+          <h3 class="card__title">나만의 굿즈 제작</h3>
+          <p class="card__text">직접 고른 도안에 이름과 날짜를 새겨 3D프린터로 출력합니다. 키링·스탠드·미니 피규어 중에서 고르세요.</p>
+          <div class="card__tags"><span class="tag">90분</span><span class="tag">각인 무료</span></div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <img class="card__img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLsu6TtlIzsnbQg7ZWo6ruYIOunjOuToCDsobDrqoXsnYQg65Ok6rOgIOybg+uKlCDrqqjsirUg7J2865+s7Iqk7Yq4Ij4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmczIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0ZERjFFNCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0Y0REVDQSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0ibGFtcGdsb3ciIGN4PSIwLjUiIGN5PSIwLjUiIHI9IjAuNSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0ZGRDc5RSIgc3RvcC1vcGFjaXR5PSIwLjk1Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRkZENzlFIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJ1cmwoI2JnMykiLz4KICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSIyMDAiIHI9IjE1MCIgZmlsbD0idXJsKCNsYW1wZ2xvdykiLz4KICA8IS0tIOuRkCDsgqzrnowgLS0+CiAgPGcgZmlsbD0iI0Q0OTU2QSI+CiAgICA8Y2lyY2xlIGN4PSIxOTAiIGN5PSIxNTAiIHI9IjQ2Ii8+CiAgICA8cGF0aCBkPSJNMTIwIDM0MCBDIDExNiAyNTAsIDE0OCAyMDYsIDE5MCAyMDYgQyAyMzIgMjA2LCAyNjQgMjUwLCAyNjAgMzQwIFoiLz4KICA8L2c+CiAgPGcgZmlsbD0iI0I4NkY0MiI+CiAgICA8Y2lyY2xlIGN4PSI0MTAiIGN5PSIxNTAiIHI9IjQ2Ii8+CiAgICA8cGF0aCBkPSJNMzQwIDM0MCBDIDMzNiAyNTAsIDM2OCAyMDYsIDQxMCAyMDYgQyA0NTIgMjA2LCA0ODQgMjUwLCA0ODAgMzQwIFoiLz4KICA8L2c+CiAgPCEtLSDqsIDsmrTrjbAg7KGw66qFIC0tPgogIDxnPgogICAgPHJlY3QgeD0iMjcyIiB5PSIyNDgiIHdpZHRoPSI1NiIgaGVpZ2h0PSIxNiIgcng9IjgiIGZpbGw9IiM2RTQ0MjkiLz4KICAgIDxwYXRoIGQ9Ik0yNzAgMjQ4IGwzMCAtNzQgaDAgbDMwIDc0IHoiIGZpbGw9IiNGRkUzQjgiIHN0cm9rZT0iI0MwOEE1RiIgc3Ryb2tlLXdpZHRoPSI2IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CiAgICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSIxOTYiIHI9IjQ2IiBmaWxsPSJ1cmwoI2xhbXBnbG93KSIvPgogIDwvZz4KICA8cGF0aCBkPSJNMzAwIDEyMCBjLTE2IC0xNiAtMjggLTI0IC0yOCAtMzYgYTE0IDE0IDAgMCAxIDI4IC05IGExNCAxNCAwIDAgMSAyOCA5IGMwIDEyIC0xMiAyMCAtMjggMzYgeiIgZmlsbD0iI0U5QTg3QyIvPgo8L3N2Zz4K" alt="커플이 직접 만든 무드등을 사이에 두고 마주 선 일러스트">
+        <div class="card__body">
+          <p class="card__label">Anniversary</p>
+          <h3 class="card__title">기념일 커플 클래스</h3>
+          <p class="card__text">둘이 하나씩 만들어 짝을 맞추는 커플 코스. 무드등·커플링 홀더 등 기념일에 딱 맞는 작품으로 구성했습니다.</p>
+          <div class="card__tags"><span class="tag">2인 전용</span><span class="tag">사진 촬영</span></div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <img class="card__img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNDAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLsl6zrn6wg66qF7J20IO2VqOq7mCDssLjsl6ztlZjripQg64uo7LK0IOyytO2XmCDtgbTrnpjsiqQg7J2865+s7Iqk7Yq4Ij4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmc0IiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0ZERjFFNCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0YyREJDNSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9InVybCgjYmc0KSIvPgogIDxjaXJjbGUgY3g9IjMwMCIgY3k9IjcwIiByPSIxMTAiIGZpbGw9IiNFOEM0QTAiIG9wYWNpdHk9IjAuNCIvPgogIDxnPgogICAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iMTcwIiByPSIzOCIgZmlsbD0iI0U5QTg3QyIvPgogICAgPHBhdGggZD0iTTk2IDMwMCBDIDkyIDIzMiwgMTE4IDIwMCwgMTUwIDIwMCBDIDE4MiAyMDAsIDIwOCAyMzIsIDIwNCAzMDAgWiIgZmlsbD0iI0U5QTg3QyIvPgogICAgPGNpcmNsZSBjeD0iMzAwIiBjeT0iMTUwIiByPSI0NCIgZmlsbD0iI0Q0OTU2QSIvPgogICAgPHBhdGggZD0iTTIzOCAzMDAgQyAyMzQgMjI0LCAyNjQgMTg2LCAzMDAgMTg2IEMgMzM2IDE4NiwgMzY2IDIyNCwgMzYyIDMwMCBaIiBmaWxsPSIjRDQ5NTZBIi8+CiAgICA8Y2lyY2xlIGN4PSI0NTAiIGN5PSIxNzAiIHI9IjM4IiBmaWxsPSIjQjg2RjQyIi8+CiAgICA8cGF0aCBkPSJNMzk2IDMwMCBDIDM5MiAyMzIsIDQxOCAyMDAsIDQ1MCAyMDAgQyA0ODIgMjAwLCA1MDggMjMyLCA1MDQgMzAwIFoiIGZpbGw9IiNCODZGNDIiLz4KICA8L2c+CiAgPHJlY3QgeD0iNjAiIHk9IjMwMCIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSIyMiIgcng9IjExIiBmaWxsPSIjQzA4QTVGIi8+CiAgPHJlY3QgeD0iMjQwIiB5PSIyNTYiIHdpZHRoPSIxMjAiIGhlaWdodD0iNDQiIHJ4PSIxMCIgZmlsbD0iI0ZGRkZGRiIgc3Ryb2tlPSIjQjg2RjQyIiBzdHJva2Utd2lkdGg9IjgiLz4KICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSIyNzgiIHI9IjEwIiBmaWxsPSIjRDQ5NTZBIi8+Cjwvc3ZnPgo=" alt="여러 사람이 작업대에 둘러앉아 함께 만들기를 하는 단체 클래스 일러스트">
+        <div class="card__body">
+          <p class="card__label">Group</p>
+          <h3 class="card__title">단체 · 기업 워크숍</h3>
+          <p class="card__text">동아리, 팀 워크숍, 가족 모임까지. 인원과 시간에 맞춰 프로그램을 조정해 드립니다. 최대 20명까지 가능해요.</p>
+          <div class="card__tags"><span class="tag">4인 이상</span><span class="tag">맞춤 구성</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3. 우리만의 강점 ================= -->
+<section class="section section--tint" id="strengths">
+  <div class="wrap">
+    <div class="section-head section-head--center reveal">
+      <p class="eyebrow">Why Us</p>
+      <h2 class="section-title">세상에 하나뿐인<br>나만의 굿즈가 되는 이유</h2>
+      <p class="section-desc">기성품에는 없는 것 — 이름, 날짜, 그리고 그날의 이야기. 우리 공방은 그 세 가지를 작품 안에 남깁니다.</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat reveal">
+        <p class="stat__num"><span class="count" data-target="2400">0</span>+</p>
+        <p class="stat__label">누적 체험 참여자</p>
+        <p class="stat__desc">문을 연 이후 함께 만든 분들</p>
+      </div>
+      <div class="stat reveal">
+        <p class="stat__num"><span class="count" data-target="96">0</span>%</p>
+        <p class="stat__label">재방문 · 추천 의향</p>
+        <p class="stat__desc">체험 후 설문 응답 기준</p>
+      </div>
+      <div class="stat reveal">
+        <p class="stat__num"><span class="count" data-target="40">0</span>종</p>
+        <p class="stat__label">선택 가능한 굿즈 도안</p>
+        <p class="stat__desc">키링부터 무드등까지</p>
+      </div>
+      <div class="stat reveal">
+        <p class="stat__num"><span class="count" data-target="90">0</span>분</p>
+        <p class="stat__label">당일 완성 소요 시간</p>
+        <p class="stat__desc">만들고 바로 가져가세요</p>
+      </div>
+    </div>
+
+    <div class="points">
+      <div class="point reveal">
+        <span class="point__no" aria-hidden="true">01</span>
+        <div>
+          <h3 class="point__title">100% 커스텀 각인</h3>
+          <p class="point__text">두 사람의 이름과 만난 날짜를 도안에 직접 넣습니다. 같은 작품이 두 개 나올 수 없어요.</p>
+        </div>
+      </div>
+      <div class="point reveal">
+        <span class="point__no" aria-hidden="true">02</span>
+        <div>
+          <h3 class="point__title">준비물 없이 몸만 오세요</h3>
+          <p class="point__text">재료비·도구·앞치마·선물 포장까지 모두 포함. 예약하고 시간 맞춰 오시면 됩니다.</p>
+        </div>
+      </div>
+      <div class="point reveal">
+        <span class="point__no" aria-hidden="true">03</span>
+        <div>
+          <h3 class="point__title">업사이클 소재 사용</h3>
+          <p class="point__text">대구 업사이클센터와 함께 친환경 필라멘트를 활용합니다. 의미까지 담아 가는 선물이에요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 4. 고객 후기 ================= -->
+<section class="section" id="reviews">
+  <div class="wrap">
+    <div class="section-head section-head--center reveal">
+      <p class="eyebrow">Reviews</p>
+      <h2 class="section-title">재미있었고,<br>무엇보다 특별했어요</h2>
+      <p class="section-desc">실제로 다녀가신 분들이 남겨주신 이야기입니다.</p>
+    </div>
+
+    <div class="carousel reveal" id="carousel" aria-roledescription="캐러셀" aria-label="고객 후기 슬라이드">
+      <div class="carousel__viewport">
+        <div class="carousel__track" id="track">
+
+          <div class="slide" role="group" aria-roledescription="슬라이드" aria-label="1 / 5">
+            <figure class="review">
+              <p class="review__stars" aria-label="별점 5점 만점에 5점">★★★★★</p>
+              <blockquote class="review__quote">100일 기념으로 갔는데 둘 다 시간 가는 줄 몰랐어요. 남자친구가 이런 거 좋아할까 걱정했는데 제일 신나 했습니다. 만든 키링 지금도 가방에 달고 다녀요.</blockquote>
+              <figcaption class="review__who">
+                <span class="review__avatar" aria-hidden="true">김</span>
+                <span><span class="review__name">김○○ 님</span><br><span class="review__tagline">100일 기념 · 커플 클래스</span></span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="slide" role="group" aria-roledescription="슬라이드" aria-label="2 / 5">
+            <figure class="review">
+              <p class="review__stars" aria-label="별점 5점 만점에 5점">★★★★★</p>
+              <blockquote class="review__quote">손으로 뭘 만들어 본 게 학교 이후로 처음이었는데 선생님이 하나하나 알려주셔서 어렵지 않았어요. 재미있고 특별한 데이트를 찾는다면 여기 강추합니다.</blockquote>
+              <figcaption class="review__who">
+                <span class="review__avatar" aria-hidden="true">이</span>
+                <span><span class="review__name">이○○ 님</span><br><span class="review__tagline">30대 커플 · 3D펜 클래스</span></span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="slide" role="group" aria-roledescription="슬라이드" aria-label="3 / 5">
+            <figure class="review">
+              <p class="review__stars" aria-label="별점 5점 만점에 5점">★★★★★</p>
+              <blockquote class="review__quote">이름이랑 사귄 날짜 새긴 무드등을 만들었어요. 집에 두고 볼 때마다 그날 생각나서 좋습니다. 선물 사러 다니는 것보다 훨씬 기억에 남네요.</blockquote>
+              <figcaption class="review__who">
+                <span class="review__avatar" aria-hidden="true">박</span>
+                <span><span class="review__name">박○○ 님</span><br><span class="review__tagline">1주년 기념 · 무드등 제작</span></span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="slide" role="group" aria-roledescription="슬라이드" aria-label="4 / 5">
+            <figure class="review">
+              <p class="review__stars" aria-label="별점 5점 만점에 5점">★★★★★</p>
+              <blockquote class="review__quote">공방이 따뜻하고 사진 찍기도 좋아요. 만드는 동안 사진도 찍어주셔서 남는 게 많았습니다. 다음엔 친구들이랑 단체로 가보려고요.</blockquote>
+              <figcaption class="review__who">
+                <span class="review__avatar" aria-hidden="true">정</span>
+                <span><span class="review__name">정○○ 님</span><br><span class="review__tagline">20대 커플 · 굿즈 제작</span></span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="slide" role="group" aria-roledescription="슬라이드" aria-label="5 / 5">
+            <figure class="review">
+              <p class="review__stars" aria-label="별점 5점 만점에 5점">★★★★★</p>
+              <blockquote class="review__quote">생일 선물로 예약해 뒀는데 여자친구가 정말 좋아했어요. 90분이 짧게 느껴질 만큼 몰입했고, 완성품 포장까지 예쁘게 해주셔서 감동이었습니다.</blockquote>
+              <figcaption class="review__who">
+                <span class="review__avatar" aria-hidden="true">최</span>
+                <span><span class="review__name">최○○ 님</span><br><span class="review__tagline">생일 서프라이즈 · 커플 클래스</span></span>
+              </figcaption>
+            </figure>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="carousel__controls">
+        <button class="carousel__btn" id="prevBtn" type="button" aria-label="이전 후기">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="carousel__dots" id="dots"></div>
+        <button class="carousel__btn" id="nextBtn" type="button" aria-label="다음 후기">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5. 오시는 길 + 연락처 ================= -->
+<section class="section section--tint" id="location">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Location</p>
+      <h2 class="section-title">대구 업사이클센터에서<br>기다리고 있어요</h2>
+      <p class="section-desc">주차 공간이 있어 차로 오셔도 편하고, 대중교통으로도 어렵지 않게 찾아오실 수 있습니다.</p>
+    </div>
+
+    <div class="location">
+      <div class="map-card reveal">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjYwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLrjIDqtawg7JeF7IKs7J207YG07IS87YSwIOychOy5mOulvCDtkZzsi5ztlZwg7JW964+EIj4KICA8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iI0ZCRUVERiIvPgogIDxnIHN0cm9rZT0iI0VCRDZCRSIgc3Ryb2tlLXdpZHRoPSIyIj4KICAgIDxwYXRoIGQ9Ik0wIDEyMCBIOTAwIE0wIDI2MCBIOTAwIE0wIDQwMCBIOTAwIE0wIDUyMCBIOTAwIi8+CiAgICA8cGF0aCBkPSJNMTQwIDAgVjYwMCBNMzIwIDAgVjYwMCBNNTIwIDAgVjYwMCBNNzIwIDAgVjYwMCIvPgogIDwvZz4KICA8cGF0aCBkPSJNLTIwIDQ3MCBDIDIwMCA0MzAsIDMyMCA1MjAsIDU0MCA0NzAgQyA3MjAgNDMwLCA4MjAgNDcwLCA5MjAgNDQwIiBmaWxsPSJub25lIiBzdHJva2U9IiNCRkQ5REMiIHN0cm9rZS13aWR0aD0iNDYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0wIDMwMCBIOTAwIiBzdHJva2U9IiNFOEM0QTAiIHN0cm9rZS13aWR0aD0iMzQiLz4KICA8cGF0aCBkPSJNNDQwIDAgVjYwMCIgc3Ryb2tlPSIjRThDNEEwIiBzdHJva2Utd2lkdGg9IjI2Ii8+CiAgPGcgZmlsbD0iI0VFRENDNiI+CiAgICA8cmVjdCB4PSIxMjAiIHk9IjE1MCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSI5MCIgcng9IjEwIi8+CiAgICA8cmVjdCB4PSI2MDAiIHk9IjE0MCIgd2lkdGg9IjE4MCIgaGVpZ2h0PSIxMTAiIHJ4PSIxMCIvPgogICAgPHJlY3QgeD0iMTUwIiB5PSIzNTAiIHdpZHRoPSIxMzAiIGhlaWdodD0iODAiIHJ4PSIxMCIvPgogICAgPHJlY3QgeD0iNjQwIiB5PSIzNDAiIHdpZHRoPSIxNjAiIGhlaWdodD0iOTAiIHJ4PSIxMCIvPgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NDAgMzAwKSI+CiAgICA8Y2lyY2xlIHI9IjU4IiBmaWxsPSIjRDQ5NTZBIiBvcGFjaXR5PSIwLjIiLz4KICAgIDxwYXRoIGQ9Ik0wIC03MCBhNDQgNDQgMCAwIDEgNDQgNDQgYzAgMzIgLTMwIDU4IC00NCA4NCBjLTE0IC0yNiAtNDQgLTUyIC00NCAtODQgYTQ0IDQ0IDAgMCAxIDQ0IC00NCB6IiBmaWxsPSIjRDQ5NTZBIi8+CiAgICA8Y2lyY2xlIGN5PSItMjYiIHI9IjE2IiBmaWxsPSIjRkZGQUY1Ii8+CiAgPC9nPgogIDx0ZXh0IHg9IjQ0MCIgeT0iNDE4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzZFNDQyOSI+64yA6rWsIOyXheyCrOydtO2BtOyEvO2EsDwvdGV4dD4KICA8dGV4dCB4PSI0NDAiIHk9IjQ1MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNBOTcxNEIiPjNEIOuplOydtOy7pCDssrTtl5gg6rO167CpPC90ZXh0Pgo8L3N2Zz4K" alt="대구 업사이클센터 안에 위치한 3D 메이커 체험 공방 약도">
+        <div class="map-card__foot">
+          <span>대구 업사이클센터 내 3D 메이커 체험 공방</span>
+          <!-- TODO: 실제 카카오맵 장소 URL로 교체하세요 -->
+          <a href="https://map.kakao.com/?q=대구업사이클센터" target="_blank" rel="noopener noreferrer">카카오맵에서 길찾기 →</a>
+        </div>
+      </div>
+
+      <div class="info-list reveal">
+        <div class="info">
+          <span class="info__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <div>
+            <p class="info__label">Address</p>
+            <!-- TODO: 실제 도로명 주소로 교체하세요 -->
+            <p class="info__value">대구광역시 ○○구 ○○로 00, 대구 업사이클센터 0층</p>
+            <p class="info__note">건물 정문으로 들어와 안내데스크 옆 체험공방</p>
+          </div>
+        </div>
+
+        <div class="info">
+          <span class="info__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg>
+          </span>
+          <div>
+            <p class="info__label">Contact</p>
+            <!-- TODO: 실제 전화번호로 교체하세요 -->
+            <p class="info__value"><a href="tel:0530000000">053-000-0000</a></p>
+            <p class="info__note">전화 연결이 어려우면 카카오톡으로 남겨주세요</p>
+          </div>
+        </div>
+
+        <div class="info">
+          <span class="info__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </span>
+          <div>
+            <p class="info__label">Hours</p>
+            <p class="info__value">화~일 10:00 – 20:00</p>
+            <p class="info__note">매주 월요일 휴무 · 예약제 운영 (당일 예약은 전화 문의)</p>
+          </div>
+        </div>
+
+        <div class="info">
+          <span class="info__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M7 6V4h10v2M3 11h18"/></svg>
+          </span>
+          <div>
+            <p class="info__label">Parking</p>
+            <p class="info__value">센터 부설 주차장 무료 이용</p>
+            <p class="info__note">지하철·버스 이용 시 도보 이동 안내는 예약 후 문자로 보내드려요</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 6. 문의하기 ================= -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="section-head reveal">
+        <p class="eyebrow">Contact</p>
+        <h2 class="section-title">둘만의 하루,<br>지금 예약하세요</h2>
+        <p class="section-desc">원하는 날짜와 인원을 남겨주시면 가능한 시간대를 정리해 빠르게 회신드립니다. 선물용 포장이나 서프라이즈 준비도 편하게 말씀해 주세요.</p>
+
+        <div class="quick">
+          <!-- TODO: 실제 전화번호 / 카카오톡 채널 / 인스타그램 주소로 교체하세요 -->
+          <a href="tel:0530000000" aria-label="전화로 문의하기">
+            <i aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg></i>
+            전화 문의
+          </a>
+          <a href="https://pf.kakao.com/" target="_blank" rel="noopener noreferrer" aria-label="카카오톡 채널로 문의하기">
+            <i aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.9 3 2.8 6.3 2.8 10.3c0 2.6 1.7 4.9 4.3 6.2-.2.7-.7 2.5-.8 2.9-.1.5.2.5.4.4.2-.1 2.6-1.7 3.6-2.4.6.1 1.1.1 1.7.1 5.1 0 9.2-3.3 9.2-7.2S17.1 3 12 3z"/></svg></i>
+            카카오톡
+          </a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="인스타그램 방문하기">
+            <i aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg></i>
+            인스타그램
+          </a>
+        </div>
+      </div>
+
+      <div class="form-card reveal">
+        <form id="bookingForm" novalidate>
+          <div class="field" id="f-name">
+            <label for="name">이름<span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" placeholder="예) 김메이커" autocomplete="name" required>
+            <p class="error">이름을 입력해 주세요.</p>
+          </div>
+
+          <div class="field" id="f-phone">
+            <label for="phone">연락처<span class="req" aria-hidden="true">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="010-0000-0000" autocomplete="tel" inputmode="tel" required>
+            <p class="error">연락 가능한 번호를 정확히 입력해 주세요.</p>
+          </div>
+
+          <div class="field" id="f-type">
+            <label for="type">문의 유형<span class="req" aria-hidden="true">*</span></label>
+            <select id="type" name="type" required>
+              <option value="">선택해 주세요</option>
+              <option>커플 · 기념일 클래스 예약</option>
+              <option>3D펜 드로잉 클래스 예약</option>
+              <option>나만의 굿즈 제작 문의</option>
+              <option>단체 · 기업 워크숍 문의</option>
+              <option>기타 문의</option>
+            </select>
+            <p class="error">문의 유형을 선택해 주세요.</p>
+          </div>
+
+          <div class="field" id="f-message">
+            <label for="message">문의 내용<span class="req" aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" placeholder="원하시는 날짜와 시간, 인원, 준비하고 싶은 이벤트를 적어주세요." required></textarea>
+            <p class="error">문의 내용을 10자 이상 적어주세요.</p>
+          </div>
+
+          <label class="form-agree">
+            <input type="checkbox" id="agree" name="agree" required>
+            <span>예약 상담을 위한 개인정보(이름·연락처) 수집·이용에 동의합니다. 수집된 정보는 상담 목적 외에 사용되지 않습니다.</span>
+          </label>
+
+          <button class="btn btn--primary btn--block btn--lg" type="submit">클래스 예약하기</button>
+          <p class="form-note">보통 영업시간 기준 1시간 이내에 회신드립니다.</p>
+
+          <div class="form-success" id="formSuccess" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= 7. 푸터 ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div>
+        <div class="footer__brand">
+          <span class="nav__logo-mark" aria-hidden="true">3D</span>
+          <span>3D 메이커 체험 공방</span>
+        </div>
+        <p class="footer__tagline">손으로 만드는 특별한 선물<br>대구 업사이클센터에서 만나요.</p>
+        <div class="footer__sns">
+          <!-- TODO: 실제 SNS 주소로 교체하세요 -->
+          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="인스타그램">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://blog.naver.com/" target="_blank" rel="noopener noreferrer" aria-label="네이버 블로그">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 4h6.2l3.4 5.2V4H20v16h-6.2l-3.4-5.2V20H4z"/></svg>
+          </a>
+          <a href="https://pf.kakao.com/" target="_blank" rel="noopener noreferrer" aria-label="카카오톡 채널">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.9 3 2.8 6.3 2.8 10.3c0 2.6 1.7 4.9 4.3 6.2-.2.7-.7 2.5-.8 2.9-.1.5.2.5.4.4.2-.1 2.6-1.7 3.6-2.4.6.1 1.1.1 1.7.1 5.1 0 9.2-3.3 9.2-7.2S17.1 3 12 3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav aria-label="푸터 메뉴">
+        <h3>바로가기</h3>
+        <ul>
+          <li><a href="#services">체험 소개</a></li>
+          <li><a href="#strengths">우리만의 강점</a></li>
+          <li><a href="#reviews">고객 후기</a></li>
+          <li><a href="#location">오시는 길</a></li>
+          <li><a href="#contact">문의하기</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__biz">
+        <h3>사업자 정보</h3>
+        <!-- TODO: 실제 사업자 정보로 교체하세요 -->
+        <p>상호명 : 3D 메이커 체험 공방</p>
+        <p>대표자 : ○○○</p>
+        <p>사업자등록번호 : 000-00-00000</p>
+        <p>통신판매업신고 : 제0000-대구○○-0000호</p>
+        <p>주소 : 대구광역시 ○○구 ○○로 00, 대구 업사이클센터</p>
+        <p>문의 : 053-000-0000</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span id="year">2026</span> 3D 메이커 체험 공방. All rights reserved.</p>
+      <p><a href="#contact">이용약관</a> · <a href="#contact">개인정보처리방침</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---------- 네비게이션 : 스크롤 시 배경 흰색 전환 ---------- */
+  var nav = document.getElementById('nav');
+  var toggle = document.getElementById('navToggle');
+  var drawer = document.getElementById('drawer');
+
+  function onScroll() {
+    if (window.scrollY > 40) nav.classList.add('nav--solid');
+    else nav.classList.remove('nav--solid');
+    highlight();
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  /* ---------- 모바일 햄버거 메뉴 ---------- */
+  function closeDrawer() {
+    drawer.classList.remove('is-open');
+    nav.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', '메뉴 열기');
+  }
+  toggle.addEventListener('click', function () {
+    var open = drawer.classList.toggle('is-open');
+    nav.classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
+  });
+  drawer.addEventListener('click', function (e) {
+    if (e.target.closest('a')) closeDrawer();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeDrawer();
+  });
+  window.addEventListener('resize', function () {
+    if (window.innerWidth >= 900) closeDrawer();
+  });
+
+  /* ---------- 현재 섹션 메뉴 강조 ---------- */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav__link'));
+  var sections = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+  function highlight() {
+    var pos = window.scrollY + window.innerHeight * 0.3;
+    var current = -1;
+    sections.forEach(function (sec, i) { if (sec && sec.offsetTop <= pos) current = i; });
+    links.forEach(function (a, i) { a.classList.toggle('is-active', i === current); });
+  }
+
+  /* ---------- 스크롤 페이드인 ---------- */
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry, i) {
+        if (!entry.isIntersecting) return;
+        var el = entry.target;
+        var siblings = Array.prototype.slice.call(el.parentNode.children).indexOf(el);
+        el.style.transitionDelay = Math.min(siblings, 4) * 90 + 'ms';
+        el.classList.add('is-visible');
+        io.unobserve(el);
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    reveals.forEach(function (el) { io.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add('is-visible'); });
+  }
+
+  /* ---------- 숫자 카운트업 ---------- */
+  var counters = document.querySelectorAll('.count');
+  function runCount(el) {
+    var target = parseInt(el.dataset.target, 10);
+    var dur = 1400, start = null;
+    function step(ts) {
+      if (!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased).toLocaleString('ko-KR');
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if ('IntersectionObserver' in window) {
+    var co = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { runCount(e.target); co.unobserve(e.target); }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(function (el) { co.observe(el); });
+  } else {
+    counters.forEach(function (el) { el.textContent = el.dataset.target; });
+  }
+
+  /* ---------- 후기 캐러셀 ---------- */
+  var track = document.getElementById('track');
+  var slides = track.children;
+  var dotsBox = document.getElementById('dots');
+  var index = 0, timer = null;
+
+  function perView() { return window.innerWidth >= 900 ? 2 : 1; }
+  function pages() { return Math.max(1, slides.length - perView() + 1); }
+
+  function buildDots() {
+    dotsBox.innerHTML = '';
+    for (var i = 0; i < pages(); i++) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'dot';
+      b.setAttribute('aria-label', (i + 1) + '번째 후기 보기');
+      b.dataset.i = i;
+      dotsBox.appendChild(b);
+    }
+  }
+  function go(i) {
+    index = (i + pages()) % pages();
+    track.style.transform = 'translateX(-' + (index * (100 / perView())) + '%)';
+    Array.prototype.forEach.call(dotsBox.children, function (d, n) {
+      d.classList.toggle('is-active', n === index);
+    });
+  }
+  function play() { stop(); timer = setInterval(function () { go(index + 1); }, 5000); }
+  function stop() { if (timer) clearInterval(timer); }
+
+  dotsBox.addEventListener('click', function (e) {
+    var d = e.target.closest('.dot');
+    if (d) { go(parseInt(d.dataset.i, 10)); play(); }
+  });
+  document.getElementById('prevBtn').addEventListener('click', function () { go(index - 1); play(); });
+  document.getElementById('nextBtn').addEventListener('click', function () { go(index + 1); play(); });
+
+  var carousel = document.getElementById('carousel');
+  carousel.addEventListener('mouseenter', stop);
+  carousel.addEventListener('mouseleave', play);
+
+  var sx = 0, dx = 0;
+  carousel.addEventListener('touchstart', function (e) { sx = e.touches[0].clientX; dx = 0; stop(); }, { passive: true });
+  carousel.addEventListener('touchmove', function (e) { dx = e.touches[0].clientX - sx; }, { passive: true });
+  carousel.addEventListener('touchend', function () {
+    if (Math.abs(dx) > 45) go(index + (dx < 0 ? 1 : -1));
+    play();
+  });
+  window.addEventListener('resize', function () { buildDots(); go(0); });
+
+  buildDots(); go(0); play();
+
+  /* ---------- 문의 폼 ---------- */
+  var form = document.getElementById('bookingForm');
+  var success = document.getElementById('formSuccess');
+
+  function invalid(id, bad) {
+    document.getElementById(id).classList.toggle('is-invalid', bad);
+    return bad;
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var elName = document.getElementById('name');
+    var elPhone = document.getElementById('phone');
+    var elType = document.getElementById('type');
+    var elMsg = document.getElementById('message');
+    var elAgree = document.getElementById('agree');
+
+    var name = elName.value.trim();
+    var phone = elPhone.value.trim();
+    var type = elType.value;
+    var msg = elMsg.value.trim();
+
+    var bad = false;
+    bad = invalid('f-name', name.length < 2) || bad;
+    bad = invalid('f-phone', !/^0\d{1,2}-?\d{3,4}-?\d{4}$/.test(phone.replace(/\s/g, ''))) || bad;
+    bad = invalid('f-type', !type) || bad;
+    bad = invalid('f-message', msg.length < 10) || bad;
+
+    if (bad) {
+      form.querySelector('.is-invalid input, .is-invalid select, .is-invalid textarea').focus();
+      return;
+    }
+    if (!elAgree.checked) {
+      alert('개인정보 수집·이용에 동의해 주세요.');
+      elAgree.focus();
+      return;
+    }
+
+    /* 서버가 아직 연결되지 않은 상태의 기본 동작입니다.
+       Formspree·구글폼·자체 API 등으로 교체해 사용하세요. */
+    success.classList.add('is-shown');
+    success.innerHTML = '<strong>' + name.replace(/[<>&]/g, '') + ' 님, 예약 문의가 접수되었습니다.</strong><br>'
+      + '남겨주신 ' + phone.replace(/[<>&]/g, '') + ' 번호로 영업시간 기준 1시간 이내에 연락드릴게요. '
+      + '급하시면 <a href="tel:0530000000" style="color:#B8764A;font-weight:700;">053-000-0000</a>으로 바로 전화 주세요.';
+    form.reset();
+    success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+
+  form.addEventListener('input', function (e) {
+    var f = e.target.closest('.field');
+    if (f) f.classList.remove('is-invalid');
+  });
+
+  /* ---------- 기타 ---------- */
+  document.getElementById('year').textContent = new Date().getFullYear();
+  onScroll();
+})();
+</script>
+</body>
+</html>

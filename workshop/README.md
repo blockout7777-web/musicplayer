@@ -8,6 +8,7 @@ HTML 한 장 + SVG 이미지로만 되어 있어 서버나 빌드 도구 없이 
 | 파일 | 설명 |
 | --- | --- |
 | `index.html` | 본체. CSS·JavaScript가 모두 안에 들어 있습니다. |
+| `standalone.html` | 이미지까지 한 파일에 담은 단일 파일 버전. 이 파일 하나만 있으면 됩니다. |
 | `assets/hero.svg` | 히어로 배경 일러스트 |
 | `assets/service-*.svg` | 서비스 카드 4종 이미지 |
 | `assets/map.svg` | 오시는 길 약도 |
@@ -16,6 +17,8 @@ HTML 한 장 + SVG 이미지로만 되어 있어 서버나 빌드 도구 없이 
 ## 보는 방법
 
 `index.html` 을 브라우저로 열면 바로 확인됩니다.
+파일 하나만 주고받아야 할 때는 `standalone.html` 을 쓰세요 — 이미지가 파일 안에 들어 있어 혼자서도 동작합니다.
+다만 홈페이지로 올릴 때는 검색 노출과 공유 이미지 때문에 `index.html` + `assets/` 조합을 권합니다.
 배포는 폴더째 올리기만 하면 됩니다 — Cloudflare Pages, Netlify, GitHub Pages 모두 설정 없이 동작합니다.
 
 ## 페이지 구성
