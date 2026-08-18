@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="여러 명이 함께 참여하는 단체 체험 클래스 일러스트">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDF1E4"/><stop offset="1" stop-color="#F2DBC5"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg4)"/>
+  <circle cx="300" cy="70" r="110" fill="#E8C4A0" opacity="0.4"/>
+  <g>
+    <circle cx="150" cy="170" r="38" fill="#E9A87C"/>
+    <path d="M96 300 C 92 232, 118 200, 150 200 C 182 200, 208 232, 204 300 Z" fill="#E9A87C"/>
+    <circle cx="300" cy="150" r="44" fill="#D4956A"/>
+    <path d="M238 300 C 234 224, 264 186, 300 186 C 336 186, 366 224, 362 300 Z" fill="#D4956A"/>
+    <circle cx="450" cy="170" r="38" fill="#B86F42"/>
+    <path d="M396 300 C 392 232, 418 200, 450 200 C 482 200, 508 232, 504 300 Z" fill="#B86F42"/>
+  </g>
+  <rect x="60" y="300" width="480" height="22" rx="11" fill="#C08A5F"/>
+  <rect x="240" y="256" width="120" height="44" rx="10" fill="#FFFFFF" stroke="#B86F42" stroke-width="8"/>
+  <circle cx="300" cy="278" r="10" fill="#D4956A"/>
+</svg>

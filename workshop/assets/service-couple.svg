@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="커플이 함께 만든 조명을 들고 웃는 모습 일러스트">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDF1E4"/><stop offset="1" stop-color="#F4DECA"/>
+    </linearGradient>
+    <radialGradient id="lampglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFD79E" stop-opacity="0.95"/><stop offset="1" stop-color="#FFD79E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg3)"/>
+  <circle cx="300" cy="200" r="150" fill="url(#lampglow)"/>
+  <!-- 두 사람 -->
+  <g fill="#D4956A">
+    <circle cx="190" cy="150" r="46"/>
+    <path d="M120 340 C 116 250, 148 206, 190 206 C 232 206, 264 250, 260 340 Z"/>
+  </g>
+  <g fill="#B86F42">
+    <circle cx="410" cy="150" r="46"/>
+    <path d="M340 340 C 336 250, 368 206, 410 206 C 452 206, 484 250, 480 340 Z"/>
+  </g>
+  <!-- 가운데 조명 -->
+  <g>
+    <rect x="272" y="248" width="56" height="16" rx="8" fill="#6E4429"/>
+    <path d="M270 248 l30 -74 h0 l30 74 z" fill="#FFE3B8" stroke="#C08A5F" stroke-width="6" stroke-linejoin="round"/>
+    <circle cx="300" cy="196" r="46" fill="url(#lampglow)"/>
+  </g>
+  <path d="M300 120 c-16 -16 -28 -24 -28 -36 a14 14 0 0 1 28 -9 a14 14 0 0 1 28 9 c0 12 -12 20 -28 36 z" fill="#E9A87C"/>
+</svg>

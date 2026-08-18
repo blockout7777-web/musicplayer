@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="3D 프린터로 커플 키링과 굿즈를 출력하는 일러스트">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDF1E4"/><stop offset="1" stop-color="#F1DAC6"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg2)"/>
+  <circle cx="120" cy="80" r="100" fill="#E8C4A0" opacity="0.5"/>
+  <circle cx="510" cy="330" r="80" fill="#D4956A" opacity="0.2"/>
+  <!-- 프린터 -->
+  <rect x="150" y="80" width="300" height="230" rx="20" fill="#FFFFFF" stroke="#D4956A" stroke-width="10"/>
+  <rect x="185" y="115" width="230" height="140" rx="10" fill="#FBEADA"/>
+  <rect x="215" y="230" width="170" height="14" rx="7" fill="#C08A5F"/>
+  <rect x="288" y="128" width="24" height="60" rx="8" fill="#D4956A"/>
+  <!-- 출력물: 키링 두 개 -->
+  <path d="M270 230 c-24 -22 -40 -36 -40 -54 a20 20 0 0 1 40 -13 a20 20 0 0 1 40 13 c0 18 -16 32 -40 54 z" fill="#D4956A"/>
+  <circle cx="352" cy="206" r="26" fill="none" stroke="#B86F42" stroke-width="10"/>
+  <rect x="150" y="310" width="300" height="18" rx="9" fill="#E8C4A0"/>
+  <circle cx="470" cy="150" r="14" fill="#E8C4A0"/>
+  <circle cx="120" cy="270" r="10" fill="#D4956A" opacity="0.6"/>
+</svg>

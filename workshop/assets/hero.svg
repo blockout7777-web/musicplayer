@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="공방에서 커플이 3D 프린터로 굿즈를 만드는 모습">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#3d2418"/>
+      <stop offset="0.55" stop-color="#6b3f2a"/>
+      <stop offset="1" stop-color="#2a1810"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.72" cy="0.24" r="0.55">
+      <stop offset="0" stop-color="#F4C98E" stop-opacity="0.85"/>
+      <stop offset="0.45" stop-color="#D4956A" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#D4956A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lamp" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFE3B8" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#FFD79E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tabletop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A9714B"/>
+      <stop offset="1" stop-color="#6E4429"/>
+    </linearGradient>
+    <linearGradient id="printglow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE0AE" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#E8C4A0" stop-opacity="0.15"/>
+    </linearGradient>
+      <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#33200f"/>
+      <stop offset="1" stop-color="#1c1008"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+
+  <!-- 창문 -->
+  <g opacity="0.5">
+    <rect x="1010" y="90" width="420" height="330" rx="14" fill="#FFD8A6" opacity="0.28"/>
+    <rect x="1010" y="90" width="420" height="330" rx="14" fill="none" stroke="#F2C892" stroke-opacity="0.5" stroke-width="6"/>
+    <line x1="1220" y1="90" x2="1220" y2="420" stroke="#F2C892" stroke-opacity="0.45" stroke-width="6"/>
+    <line x1="1010" y1="255" x2="1430" y2="255" stroke="#F2C892" stroke-opacity="0.45" stroke-width="6"/>
+  </g>
+
+  <!-- 선반과 굿즈 -->
+  <g opacity="0.55">
+    <rect x="120" y="240" width="520" height="12" rx="6" fill="#C08A5F"/>
+    <rect x="120" y="430" width="520" height="12" rx="6" fill="#C08A5F"/>
+    <circle cx="190" cy="205" r="30" fill="#E8C4A0" opacity="0.75"/>
+    <rect x="255" y="180" width="52" height="60" rx="10" fill="#D4956A" opacity="0.8"/>
+    <path d="M360 240 l34 -62 34 62 z" fill="#E8C4A0" opacity="0.7"/>
+    <rect x="470" y="186" width="70" height="54" rx="8" fill="#C98356" opacity="0.75"/>
+    <circle cx="580" cy="212" r="28" fill="#E8C4A0" opacity="0.6"/>
+    <rect x="150" y="380" width="60" height="50" rx="10" fill="#D4956A" opacity="0.75"/>
+    <circle cx="290" cy="400" r="30" fill="#E8C4A0" opacity="0.65"/>
+    <path d="M400 430 c-26 -26 -46 -44 -46 -66 a26 26 0 0 1 46 -16 a26 26 0 0 1 46 16 c0 22 -20 40 -46 66 z" fill="#E9A87C" opacity="0.85"/>
+    <rect x="490" y="378" width="90" height="52" rx="10" fill="#C98356" opacity="0.7"/>
+  </g>
+
+  <!-- 전구 조명 -->
+  <g>
+    <path d="M60 60 C 420 170, 900 40, 1560 130" fill="none" stroke="#E8C4A0" stroke-opacity="0.35" stroke-width="3"/>
+    <g fill="#FFD79E">
+      <circle cx="260" cy="112" r="9"/><circle cx="520" cy="126" r="9"/><circle cx="780" cy="96" r="9"/><circle cx="1040" cy="82" r="9"/><circle cx="1300" cy="102" r="9"/>
+    </g>
+    <g fill="url(#lamp)" opacity="0.65">
+      <circle cx="260" cy="112" r="60"/><circle cx="520" cy="126" r="60"/><circle cx="780" cy="96" r="60"/><circle cx="1040" cy="82" r="60"/><circle cx="1300" cy="102" r="60"/>
+    </g>
+  </g>
+
+  <!-- 작업대 -->
+  <rect x="0" y="700" width="1600" height="44" fill="url(#tabletop)"/>
+  <rect x="0" y="744" width="1600" height="156" fill="url(#floor)"/>
+  <ellipse cx="1090" cy="760" rx="360" ry="46" fill="#FFD79E" opacity="0.10"/>
+  <ellipse cx="560" cy="766" rx="300" ry="38" fill="#FFD79E" opacity="0.06"/>
+
+  <!-- 3D 프린터 -->
+  <g transform="translate(940 490)">
+    <rect x="0" y="0" width="300" height="210" rx="16" fill="#3A2317" stroke="#C08A5F" stroke-width="5"/>
+    <rect x="26" y="26" width="248" height="158" rx="8" fill="#1E1109"/>
+    <rect x="26" y="26" width="248" height="158" rx="8" fill="url(#printglow)"/>
+    <rect x="60" y="150" width="180" height="12" rx="6" fill="#C08A5F"/>
+    <rect x="140" y="44" width="22" height="70" rx="6" fill="#E8C4A0"/>
+    <path d="M120 150 h60 l-10 -46 h-40 z" fill="#FFD79E" opacity="0.95"/>
+    <circle cx="150" cy="120" r="54" fill="url(#lamp)" opacity="0.7"/>
+  </g>
+
+  <!-- 사람 실루엣 2인 -->
+  <g fill="#1B0F07" opacity="0.92">
+    <g transform="translate(420 330)">
+      <circle cx="90" cy="70" r="56"/>
+      <path d="M10 380 C 4 210, 40 138, 90 138 C 140 138, 176 210, 170 380 Z"/>
+      <path d="M150 200 C 210 214, 250 254, 268 300 L 236 316 C 216 278, 186 250, 142 240 Z"/>
+    </g>
+    <g transform="translate(640 300)">
+      <circle cx="96" cy="76" r="60"/>
+      <path d="M12 410 C 6 232, 44 152, 96 152 C 148 152, 186 232, 180 410 Z"/>
+      <path d="M40 216 C -18 236, -50 282, -60 330 L -26 344 C -12 304, 12 276, 50 258 Z"/>
+    </g>
+  </g>
+
+  <!-- 테이블 위 작은 소품 -->
+  <g opacity="0.85">
+    <path d="M300 700 c-22 -22 -40 -38 -40 -57 a22 22 0 0 1 40 -14 a22 22 0 0 1 40 14 c0 19 -18 35 -40 57 z" fill="#E9A87C"/>
+    <rect x="770" y="652" width="72" height="48" rx="10" fill="#D4956A"/>
+    <circle cx="1340" cy="674" r="26" fill="#E8C4A0"/>
+  </g>
+
+  <!-- 먼지/보케 -->
+  <g fill="#FFE3B8" opacity="0.25">
+    <circle cx="180" cy="520" r="6"/><circle cx="700" cy="180" r="8"/><circle cx="1180" cy="330" r="5"/>
+    <circle cx="880" cy="470" r="7"/><circle cx="1480" cy="520" r="6"/><circle cx="360" cy="120" r="5"/>
+  </g>
+</svg>
